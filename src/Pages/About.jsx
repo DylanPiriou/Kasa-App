@@ -3,6 +3,7 @@ import Banner from '../Components/Banner'
 import Navbar from '../Components/Navbar'
 import BackgroundAbout from '../Assets/imgs/about-bg.jpg'
 import Collapse from '../Components/Collapse'
+import Footer from '../Components/Footer'
 
 export default function About() {
   const  [content] = useState([
@@ -32,6 +33,7 @@ export default function About() {
           return <Collapse key={index} data={item}/>
         })}
       </div>
+      <Footer/>
     </div>
   )
 }

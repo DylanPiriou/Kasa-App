@@ -1,0 +1,18 @@
+footer{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    margin-top: 46px;
+    color: #FFF;
+    background: #000;
+}
+
+.footer-text{
+    font-size: 24px;
+}
