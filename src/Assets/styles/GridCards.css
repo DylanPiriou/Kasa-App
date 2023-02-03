@@ -1,0 +1,12 @@
+.grid-cards{
+    width: 100%;
+    height: auto;
+    min-height: 50vh;
+    padding: 50px;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 60px;
+    border-radius: 25px;
+    background: #F7F7F7;
+}
