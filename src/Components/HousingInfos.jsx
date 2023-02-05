@@ -2,6 +2,7 @@ import React from 'react'
 import "../Assets/styles/HousingInfos.css"
 import FullStar from "../Assets/logos/full-star.svg"
 import EmptyStar from "../Assets/logos/empty-star.svg"
+import Collapse from '../Components/Collapse'
 
 export default function HousingInfos({ data }) {
     const rating =[1, 2, 3, 4, 5]
@@ -28,6 +29,12 @@ export default function HousingInfos({ data }) {
                     <img src={FullStar} key={index} id={index} alt="étoile rouge"/>
                 ))}
             </div>
+        </div>
+        <div className="collapse-infos">
+            <Collapse title={"Description"} content={data.description}/>
+            <Collapse title={"Equipements"} content={data.equipments.map(equipement => {
+                return <p className='housing-equipment'>{equipement}</p>
+            })}/>
         </div>
     </div>
   )
