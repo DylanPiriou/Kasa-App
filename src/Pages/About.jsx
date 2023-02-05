@@ -30,7 +30,7 @@ export default function About() {
       <Banner bg={BackgroundAbout} />
       <div className="collapse-container">
         {content.map((item, index) => {
-          return <Collapse key={index} data={item}/>
+          return <Collapse key={index} title={item.title} content={item.content}/>
         })}
       </div>
       <Footer/>

@@ -19,13 +19,13 @@ export default function HousingInfos({ data }) {
         </div>
         <div className="middle-infos">
             <div className="tags-box">
-                {data.tags.map(tag => <button className="tag">{tag}</button>)}
+                {data.tags.map((tag, index) => <button className="tag" key={index} id={index}>{tag}</button>)}
             </div>
             <div className="stars-box">
-                {rating.map(score => score >= data.rating ? (
-                    <img src={EmptyStar} alt="étoile grise"/>
+                {rating.map((score, index) => score >= data.rating ? (
+                    <img src={EmptyStar} key={index} id={index} alt="étoile grise"/>
                 ) :(
-                    <img src={FullStar} alt="étoile rouge"/>
+                    <img src={FullStar} key={index} id={index} alt="étoile rouge"/>
                 ))}
             </div>
         </div>
