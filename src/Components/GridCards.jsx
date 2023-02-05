@@ -7,7 +7,7 @@ export default function GridCards() {
   return (
     <div className="grid-cards">
         {Data.map((item, index) => {
-            return <Card key={index} item={item}/>
+            return <Card item={item} key={index}/>
         })}
     </div>
   )
