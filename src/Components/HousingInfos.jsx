@@ -8,34 +8,37 @@ export default function HousingInfos({ data }) {
     const rating =[1, 2, 3, 4, 5]
   return (
     <div className="housing-infos">
+
         <div className="top-infos">
-            <div className="title-location">
+            <div className="title-location-tags-container">
                 <h2 className="housing-title">{data.title}</h2>
                 <p className="housing-location">{data.location}</p>
+                <div className="tags-box">
+                    {data.tags.map((tag, index) => <button className="tag" key={index} id={index}>{tag}</button>)}
+                </div>
             </div>
-            <div className="host">
-                <p className="host-name">{data.host.name}</p>
-                <img src={data.host.picture} className="host-picture" alt={data.host.name} />
-            </div>
-        </div>
-        <div className="middle-infos">
-            <div className="tags-box">
-                {data.tags.map((tag, index) => <button className="tag" key={index} id={index}>{tag}</button>)}
-            </div>
-            <div className="stars-box">
+            <div className="host-stars-container">
+                <div className="host-box">
+                    <p className="host-name">{data.host.name}</p>
+                    <img src={data.host.picture} className="host-picture" alt={data.host.name} />
+                </div>
+                <div className="stars-box">
                 {rating.map((score, index) => score >= data.rating ? (
                     <img src={EmptyStar} key={index} id={index} alt="étoile grise"/>
                 ) :(
                     <img src={FullStar} key={index} id={index} alt="étoile rouge"/>
                 ))}
             </div>
+            </div>
         </div>
+
         <div className="collapse-infos">
             <Collapse title={"Description"} content={data.description}/>
             <Collapse title={"Equipements"} content={data.equipments.map(equipement => {
                 return <p className='housing-equipment'>{equipement}</p>
             })}/>
         </div>
+
     </div>
   )
 }
