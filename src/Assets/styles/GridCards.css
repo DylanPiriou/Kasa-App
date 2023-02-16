@@ -2,11 +2,17 @@
     width: 100%;
     height: auto;
     min-height: 50vh;
-    padding: 50px;
+    padding: 50px 20px;
     display: grid;
-    place-items: center;
-    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-    gap: 60px;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 340px);
     border-radius: 25px;
+    gap: 60px 3%;
     background: #F7F7F7;
+}
+
+@media (max-width: 824px){
+    .grid-cards{
+        background: none;
+    }
 }

@@ -32,3 +32,9 @@
     font-weight: 500;
     color: #FFF;
 }
+
+@media (max-width: 824px){
+    .card{
+        width: auto;
+    }
+}

@@ -6,11 +6,11 @@
     color: #FF6060;
 }
 
-.top-infos,
-.middle-infos{
+.top-infos{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    gap: 15px;
     margin-bottom: 26px;
 }
 
@@ -57,7 +57,7 @@
 }
 
 .host-name{
-    width: 100px;
+    width: 80px;
     text-align: end;
 }
 
@@ -71,4 +71,20 @@
     display: flex;
     justify-content: baseline;
     gap: 76px;
+}
+
+@media (max-width: 820px){
+    .collapse-infos{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .top-infos{
+        flex-direction: column;
+    }
+    .host-stars-container{
+        width: 100%;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
