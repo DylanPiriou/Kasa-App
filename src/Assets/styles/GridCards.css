@@ -3,16 +3,19 @@
     height: auto;
     min-height: 50vh;
     padding: 50px 20px;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(auto-fill, 340px);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
     border-radius: 25px;
-    gap: 60px 3%;
+    gap: 60px 1%;
     background: #F7F7F7;
 }
 
 @media (max-width: 824px){
     .grid-cards{
+        padding: 0;
         background: none;
+        gap: 20px;
     }
 }
