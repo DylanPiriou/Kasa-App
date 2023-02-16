@@ -1,6 +1,6 @@
 .card{
     max-width: 340px;
-    height: 340px;
+    height: clamp(255px, 40vw, 340px);
     border-radius: 10px;
     overflow: hidden;
     position: relative;

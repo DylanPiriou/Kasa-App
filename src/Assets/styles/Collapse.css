@@ -5,13 +5,13 @@
 
 .collapse-btn{
     width: 100%;
-    height: 47px;
+    height: clamp(30px, 6vw, 47px);
     border: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 18px;
-    font-size: 2vmin;
+    font-size: clamp(12px, 4vw, 16px);
     border-radius: 5px;
     color: #FFF;
     background: #FF6060;
@@ -20,9 +20,9 @@
 .collapse-content{
     width: 100%;
     height: auto;
-    padding: 36px 18px 18px;
-    font-size: 2.5vmin;
-    line-height: 34px;
+    padding: 5% 18px 18px;
+    font-size: clamp(12px, 3vw, 18px);
+    line-height: 3vh;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     color: #FF6060;
