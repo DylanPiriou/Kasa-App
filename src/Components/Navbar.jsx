@@ -6,10 +6,10 @@ import '../Assets/styles/Navbar.css'
 export default function Navbar() {
   return (
     <div className="navbar">
-        <img src={NavLogo} alt="Logo de Kasa" />
+        <NavLink to="/"><img src={NavLogo} alt="Logo de Kasa" /></NavLink>
         <nav>
             <NavLink to="/">Accueil</NavLink>
-            <NavLink to="/about">A Propos</NavLink>
+            <NavLink to="/a-propos">A Propos</NavLink>
         </nav>
     </div>
   )

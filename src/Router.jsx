@@ -9,7 +9,7 @@ export default function router() {
   return (
     <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
+        <Route path='/a-propos' element={<About />} />
         <Route path='/logement/:id' element={<Housing />} />
         <Route path='/*' element={<NotFound />} />
     </Routes>
