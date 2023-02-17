@@ -34,7 +34,7 @@
     color: #FFF;
 }
 
-@media (max-width: 824px){
+@media (max-width: 840px){
     .card{
         width: 100%;
         max-width: 100%;

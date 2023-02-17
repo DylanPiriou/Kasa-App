@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useLocation } from 'react-router-dom'
 import Footer from '../Components/Footer';
 import HousingInfos from '../Components/HousingInfos';
 import Navbar from "../Components/Navbar"
 import Slider from '../Components/Slider';
+import "../Assets/styles/Housing.css"
 
 
 export default function Housing() {

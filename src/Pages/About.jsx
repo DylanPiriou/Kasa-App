@@ -4,6 +4,7 @@ import Navbar from '../Components/Navbar'
 import BackgroundAbout from '../Assets/imgs/about-bg.jpg'
 import Collapse from '../Components/Collapse'
 import Footer from '../Components/Footer'
+import "../Assets/styles/About.css"
 
 export default function About() {
   const  [content] = useState([
