@@ -14,7 +14,7 @@ export default function HousingInfos({ data }) {
                 <h2 className="housing-title">{data.title}</h2>
                 <p className="housing-location">{data.location}</p>
                 <div className="tags-box">
-                    {data.tags.map((tag, index) => <button className="tag" key={index} id={index}>{tag}</button>)}
+                    {data.tags.map((tag, index) => <button className="tag" key={"tag-" + index}>{tag}</button>)}
                 </div>
             </div>
             <div className="host-stars-container">
@@ -23,19 +23,19 @@ export default function HousingInfos({ data }) {
                     <img src={data.host.picture} className="host-picture" alt={data.host.name} />
                 </div>
                 <div className="stars-box">
-                {rating.map((score, index) => score >= data.rating ? (
-                    <img src={EmptyStar} key={index} id={index} alt="étoile grise"/>
-                ) :(
-                    <img src={FullStar} key={index} id={index} alt="étoile rouge"/>
-                ))}
-            </div>
+                    {rating.map((score, index) => score >= data.rating ? (
+                    <img src={EmptyStar} key={"star-" + index} alt="étoile grise"/>
+                    ) :(
+                    <img src={FullStar} key={"star-" + index} alt="étoile rouge"/>
+                    ))}
+                </div>
             </div>
         </div>
 
         <div className="collapse-infos">
             <Collapse title={"Description"} content={data.description}/>
-            <Collapse title={"Equipements"} content={data.equipments.map(equipement => {
-                return <p className='housing-equipment'>{equipement}</p>
+            <Collapse title={"Equipements"} content={data.equipments.map((equipement, index) => {
+                return <p className='housing-equipment' key={"equipement-" + index}>{equipement}</p>
             })}/>
         </div>
 

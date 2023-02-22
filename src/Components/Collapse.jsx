@@ -5,11 +5,11 @@ export default function Collapse({ title, content, index }) {
     const [isActive, setIsActive] = useState(false)
     
     const handleCollapse = () => {
-        setIsActive(!isActive)
+        setIsActive(current => !current)
     }
 
   return (
-    <div className="collapse" id={index}>
+    <div className="collapse" id={"collapse-" + index}>
        <button className='collapse-btn' onClick={() => handleCollapse()}>
         <h2 className='collapse-title'>{title}</h2>
         {isActive ? <i className="fa-solid fa-chevron-up"></i>

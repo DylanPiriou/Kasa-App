@@ -10,6 +10,7 @@ import "../Assets/styles/Housing.css"
 export default function Housing() {
     const location = useLocation();
     const { item } = location.state;
+    console.log(item)
 
   return (
     <div className="housing">

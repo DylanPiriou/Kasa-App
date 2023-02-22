@@ -5,10 +5,10 @@ export default function Slider({ data }) {
     const [currentImg, setCurrentImg] = useState(0);
 
     const handlePrev = () => {
-        currentImg === 0 ? setCurrentImg(data.pictures.length - 1) : setCurrentImg(currentImg - 1)
+        setCurrentImg(img => (img - 1 + data.pictures.length) % data.pictures.length)
     }
     const handleNext = () => {
-        currentImg === data.pictures.length - 1 ? setCurrentImg(0) : setCurrentImg(currentImg + 1)
+        setCurrentImg(img => (img + 1) % data.pictures.length)
     }
 
   return (
