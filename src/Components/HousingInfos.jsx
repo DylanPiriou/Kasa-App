@@ -1,11 +1,9 @@
 import React from 'react'
 import "../Assets/styles/HousingInfos.scss"
-import FullStar from "../Assets/logos/full-star.svg"
-import EmptyStar from "../Assets/logos/empty-star.svg"
 import Collapse from '../Components/Collapse'
+import Stars from './Stars'
 
 export default function HousingInfos({ data }) {
-    const rating =[1, 2, 3, 4, 5]
   return (
     <div className="housing-infos">
 
@@ -22,13 +20,7 @@ export default function HousingInfos({ data }) {
                     <p className="host-name">{data.host.name}</p>
                     <img src={data.host.picture} className="host-picture" alt={data.host.name} />
                 </div>
-                <div className="stars-box">
-                    {rating.map((score, index) => score >= data.rating ? (
-                    <img src={EmptyStar} key={"star-" + index} alt="étoile grise"/>
-                    ) :(
-                    <img src={FullStar} key={"star-" + index} alt="étoile rouge"/>
-                    ))}
-                </div>
+                <Stars data={data}/>
             </div>
         </div>
 
