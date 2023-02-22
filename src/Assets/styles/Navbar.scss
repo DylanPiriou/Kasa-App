@@ -8,9 +8,7 @@
     justify-content: space-between;
 
     nav{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-center;
         gap: 3vw;
 
         a{

@@ -8,7 +8,7 @@ export default function Stars({ data }) {
     <div className="stars-box">
         {rating.map((score, index) => score >= data.rating ? (
         <img src={EmptyStar} key={"star-" + index} alt="étoile grise"/>
-        ) :(
+        ) : (
         <img src={FullStar} key={"star-" + index} alt="étoile rouge"/>
         ))}
     </div>

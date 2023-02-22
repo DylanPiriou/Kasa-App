@@ -3,10 +3,8 @@
 .banner{
     width: 100%;
     height: clamp(110px, 20vw, 223px);
+    @include flex-center;
     border-radius: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-bottom: 43px;
     padding: 16px;
     overflow: hidden;
