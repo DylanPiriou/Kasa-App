@@ -7,6 +7,10 @@
     align-items: center;
     justify-content: space-between;
 
+    .logo-kasa{
+        width: clamp(90px, 10vw, 150px);
+    }
+
     nav{
         @include flex-center;
         gap: 3vw;

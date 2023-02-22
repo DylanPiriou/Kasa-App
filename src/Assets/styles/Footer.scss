@@ -9,6 +9,10 @@ footer{
     margin-top: 46px;
     color: $primary-color;
     background: #000;
+
+    .footer-logo{
+        width: 90px;
+    }
     
     .footer-text{
         font-size: clamp(12px, 2vw, 24px);
