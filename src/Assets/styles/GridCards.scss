@@ -1,3 +1,5 @@
+@import "./Settings.scss";
+
 .grid-cards{
     width: 100%;
     height: auto;
@@ -9,7 +11,7 @@
     flex-wrap: wrap;
     border-radius: 25px;
     gap: 60px 1%;
-    background: #F7F7F7;
+    background: $tertiary-color;
 }
 
 @media (max-width: 840px){

@@ -1,5 +1,5 @@
 import React from 'react'
-import "../Assets/styles/HousingInfos.css"
+import "../Assets/styles/HousingInfos.scss"
 import FullStar from "../Assets/logos/full-star.svg"
 import EmptyStar from "../Assets/logos/empty-star.svg"
 import Collapse from '../Components/Collapse'

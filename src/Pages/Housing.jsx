@@ -4,7 +4,7 @@ import Footer from '../Components/Footer';
 import HousingInfos from '../Components/HousingInfos';
 import Navbar from "../Components/Navbar"
 import Slider from '../Components/Slider';
-import "../Assets/styles/Housing.css"
+import "../Assets/styles/Housing.scss"
 
 
 export default function Housing() {

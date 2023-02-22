@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import "../Assets/styles/Collapse.css"
+import "../Assets/styles/Collapse.scss"
 
 export default function Collapse({ title, content, index }) {
     const [isActive, setIsActive] = useState(false)

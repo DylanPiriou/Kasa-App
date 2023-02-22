@@ -1,5 +1,5 @@
 import React from 'react'
-import '../Assets/styles/Banner.css'
+import '../Assets/styles/Banner.scss'
 
 export default function Banner({ bg, title }) {
   return (

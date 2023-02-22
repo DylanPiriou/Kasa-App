@@ -1,5 +1,5 @@
 import React from 'react'
-import "../Assets/styles/Card.css"
+import "../Assets/styles/Card.scss"
 import { Link } from 'react-router-dom'
 
 export default function Card({ item }) {

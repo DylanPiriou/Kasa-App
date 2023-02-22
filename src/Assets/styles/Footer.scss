@@ -1,3 +1,5 @@
+@import "./Settings.scss";
+
 footer{
     width: 100%;
     height: 200px;
@@ -7,10 +9,10 @@ footer{
     justify-content: center;
     gap: 28px;
     margin-top: 46px;
-    color: #FFF;
+    color: $primary-color;
     background: #000;
-}
-
-.footer-text{
-    font-size: clamp(12px, 2vw, 24px);
+    
+    .footer-text{
+        font-size: clamp(12px, 2vw, 24px);
+    }
 }

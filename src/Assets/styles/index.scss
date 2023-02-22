@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+@import "./Settings.scss";
+
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +10,6 @@
 
 body{
     padding: 0 4vw;
-    font-family: 'Montserrat', sans-serif;
-    background: #FFF;
+    font-family: $font-family;
+    background: $primary-color;
 }

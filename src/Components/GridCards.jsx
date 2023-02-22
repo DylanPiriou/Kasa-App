@@ -1,5 +1,5 @@
 import React from 'react'
-import '../Assets/styles/GridCards.css'
+import '../Assets/styles/GridCards.scss'
 import Data from "../Data/data.json"
 import Card from './Card'
 
