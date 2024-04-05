@@ -1,14 +1,14 @@
-import React from 'react'
-import '../Assets/styles/GridCards.scss'
-import Data from "../Data/data.json"
-import Card from './Card'
+import React from "react";
+import "../Assets/styles/GridCards.scss";
+import Data from "../Data/data.json";
+import Card from "./Card";
 
 export default function GridCards() {
-  return (
-    <div className="grid-cards">
-        {Data.map((item, index) => {
-            return <Card item={item} key={"card-" + index}/>
-        })}
-    </div>
-  )
+	return (
+		<div className="grid-cards">
+			{Data.map((item, index) => {
+				return <Card item={item} key={"card-" + index} />;
+			})}
+		</div>
+	);
 }
