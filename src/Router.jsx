@@ -10,7 +10,7 @@ export default function router() {
     <Routes>
         <Route path='/a-propos' element={<About />} />
         <Route path='/logement/:id' element={<Housing />} />
-        <Route path='/' element={<Home />} />
+        <Route path='/Kasa-App' element={<Home />} />
         <Route path='/*' element={<NotFound />} />
     </Routes>
   )
