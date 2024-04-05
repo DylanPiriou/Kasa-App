@@ -1,4 +1,8 @@
-# React + Vite
+# Projet 11 - Software developer JavaScript/React
+
+Develop a Web application with React and React Router
+
+# Utilisation React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
