@@ -1,4 +1,4 @@
-# Projet 11 - Software developer JavaScript/React
+# Project 11 - Software developer JavaScript/React
 
 Develop a Web application with React and React Router
 
