@@ -11,7 +11,7 @@ export default function Navbar() {
 			</NavLink>
 			<nav>
 				<NavLink to="/Kasa-App">Accueil</NavLink>
-				<NavLink to="/a-propos">A Propos</NavLink>
+				<NavLink to="/Kasa-App/a-propos">A Propos</NavLink>
 			</nav>
 		</div>
 	);
