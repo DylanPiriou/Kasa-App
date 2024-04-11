@@ -26,7 +26,7 @@ export default function About() {
     },
   ]
   return (
-    <div className="about">
+    <section className="about">
       <Navbar/>
       <Banner bg={BackgroundAbout} />
       <div className="collapse-container">
@@ -35,6 +35,6 @@ export default function About() {
         })}
       </div>
       <Footer/>
-    </div>
+    </section>
   )
 }

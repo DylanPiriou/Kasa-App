@@ -8,11 +8,11 @@ import Footer from "../Components/Footer";
 export default function Home() {
 	const title = "Chez vous, partout et ailleurs";
 	return (
-		<div className="home">
+		<section className="home">
 			<Navbar />
 			<Banner bg={BackgroundHome} title={title} />
 			<GridCards />
 			<Footer />
-		</div>
+		</section>
 	);
 }

@@ -5,7 +5,7 @@ import "../Assets/styles/NotFound.scss";
 
 export default function NotFound() {
 	return (
-		<div className="notfound">
+		<section className="notfound">
 			<Navbar />
 			<div className="notfound-content">
 				<span className="error-number">404</span>
@@ -16,6 +16,6 @@ export default function NotFound() {
 			<Link to="/Kasa-App" className="goback-home">
 				Retourner sur la page d'accueil
 			</Link>
-		</div>
+		</section>
 	);
 }

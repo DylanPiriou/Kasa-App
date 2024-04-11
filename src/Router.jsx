@@ -9,8 +9,8 @@ export default function router() {
 	return (
 		<Routes>
 			<Route path="/Kasa-App/a-propos" element={<About />} />
-			<Route path="/Kasa-App/logement/:id" element={<Housing />} />
-			<Route path="/Kasa-App" element={<Home />} />
+			<Route path="/kasa-App/logement/:id" element={<Housing />} />
+			<Route path="/Kasa-App/" element={<Home />} />
 			<Route path="/*" element={<NotFound />} />
 		</Routes>
 	);

@@ -9,7 +9,7 @@ export default function Collapse({ title, content, index }) {
 	};
 
 	return (
-		<div className="collapse" id={"collapse-" + index}>
+		<div className="collapse">
 			<button className="collapse-btn" onClick={() => handleCollapse()}>
 				<h2 className="collapse-title">{title}</h2>
 				{isActive ? (

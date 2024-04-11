@@ -19,12 +19,12 @@ export default function Housing() {
   return (
     <>
     {housingData ? (
-        <div className="housing">
+        <section className="housing">
             <Navbar/>
             <Slider data={housingData} />
             <HousingInfos data={housingData}/>
             <Footer/>
-        </div>
+        </section>
     ) : (
         <NotFound/>
     )}
